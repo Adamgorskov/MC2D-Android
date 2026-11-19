@@ -1,0 +1,3 @@
+package com.example.mc2d;
+import android.app.Activity;import android.os.Bundle;import android.webkit.WebView;import android.webkit.WebSettings;import android.view.View;
+public class MainActivity extends Activity { @Override public void onCreate(Bundle b){super.onCreate(b);getWindow().getDecorView().setSystemUiVisibility(5894|1024|512|4096);WebView w=new WebView(this);w.setBackgroundColor(0xff7fc9f4);WebSettings s=w.getSettings();s.setJavaScriptEnabled(true);s.setDomStorageEnabled(true);s.setLoadWithOverviewMode(true);s.setUseWideViewPort(true);w.loadUrl("file:///android_asset/index.html");setContentView(w);} }
